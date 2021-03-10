@@ -1,0 +1,5 @@
+*.wav
+*.pbmm
+*.scorer
+env/
+__pycache__/
