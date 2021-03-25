@@ -1,4 +1,4 @@
-from mic_vad_streaming import *
+from modules.mic_vad_streaming import *
 
 # Stream from microphone to DeepSpeech using VAD
 

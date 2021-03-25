@@ -9,7 +9,8 @@ Installation extracted from [DeepSpeech docs](https://deepspeech.readthedocs.io/
 Install required packages:
 
     sudo apt install portaudio19-dev
-
+    sudo apt-get install sox libsox-fmt-mp3
+    
 Create virtualenvironment
 
     python3.6 -m venv env

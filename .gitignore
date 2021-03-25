@@ -3,3 +3,4 @@
 *.scorer
 env/
 __pycache__/
+audios/
