@@ -56,7 +56,7 @@ mkdir -p models/es/
 
 Download *.scorer and *.pbmm model files from [DeepSpeech-Ployglot-ES](https://drive.google.com/drive/folders/1-3UgQBtzEf8QcH2qc8TJHkUqCBp5BBmO) folder in Google Drive, and paste in **models/es/**
 
-Spanish Model is extracted from [DeepSpeech-Polyglot](https://gitlab.com/Jaco-Assistant/deepspeech-polyglot/) project
+Spanish Model is extracted from [DeepSpeech-Polyglot](https://gitlab.com/Jaco-Assistant/Scribosermo) project
 
 
 ## Test

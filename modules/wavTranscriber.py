@@ -50,6 +50,30 @@ def stt(ds, audio, fs):
     return transcription, inference_end, audio_length
 
 '''
+Run Inference on input audio file and get transcription with metadata
+@param ds: Deepspeech object
+@param audio: Input audio for running inference on
+@param fs: Sample rate of the input audio file
+@param num_results: Maximum number of candidate transcripts to return. Returned list might be smaller than this.
+
+@Retval:
+Returns a list [Inference with metadata, Inference Time, Audio Length]
+
+'''
+def sttWithMetadata(ds, audio, fs, num_results=1):
+
+    audio_length = len(audio) * (1 / fs)
+
+    # Run Deepspeech
+    #logging.debug('Running inference...')
+    inference_start = timer()
+    transcription = ds.sttWithMetadata(audio, num_results)
+    inference_end = timer() - inference_start
+    #logging.debug('Inference took %0.3fs for %0.3fs audio file.' % (inference_end, audio_length))
+
+    return transcription, inference_end, audio_length
+
+'''
 Resolve directory path for the models and fetch each of them.
 @param dirName: Path to the directory containing pre-trained models
 
